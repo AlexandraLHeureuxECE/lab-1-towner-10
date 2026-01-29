@@ -1,0 +1,36 @@
+:root {
+  --background-color-light: #fff;
+  --text-color-light: #000;
+  --board-bg-light: #ddd;
+  --square-bg-light: #fff;
+
+  --background-color-dark: #242424;
+  --text-color-dark: rgba(255, 255, 255, 0.87);
+  --board-bg-dark: #333;
+  --square-bg-dark: #555;
+
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+  --board-bg: var(--board-bg-light);
+  --square-bg: var(--square-bg-light);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.dark {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+  --board-bg: var(--board-bg-dark);
+  --square-bg: var(--square-bg-dark);
+}
