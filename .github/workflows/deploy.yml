@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
       - name: Set up Bun
-        uses: oven-sh/bun@v1
+        uses: oven-sh/setup-bun@v2
       - name: Install dependencies
         working-directory: ./tic-tac-toe
         run: bun install
